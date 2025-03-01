@@ -13,29 +13,31 @@
  </head>
  <body class="bg-[#F4F7FF] max-w-7xl mx-auto">
     <header>
-              <nav>
-                <div class="flex justify-between p-2  text-2xl bg-[#FFFFFF] mt-4 rounded-lg">  
-                    <div class="flex p-4 items-center space-x-5 text-center">
-                        <img src="./assets/logo.png" alt="logo">
-                        <h1>Dev<span class="font-extrabold">Board</span></h1>
+        <nav>
+            <div class="flex justify-between p-2  text-2xl bg-[#FFFFFF] mt-4 rounded-lg">  
+                <div class="flex p-4 items-center space-x-5 text-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <h1>Dev<span class="font-extrabold">Board</span></h1>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="flex space-x-2 items-center justify-center w-32 h-16  bg-[#F4F7FF] rounded-full">
+                         <img class="h-8" src="./assets/checkbox.png" alt="">
+                         <h2>23</h2>
                     </div>
-                    <div class="flex items-center space-x-6">
-                        <div class="flex space-x-2 items-center justify-center w-32 h-16  bg-[#F4F7FF] rounded-full">
-                            <img class="h-8" src="./assets/checkbox.png" alt="">
-                            <h2>23</h2>
-                        </div>
-                        <div class="w-16 h-16 bg-[#F4F7FF] flex justify-center items-center rounded-full">
-                            <img src="./assets/theme-btn.png" alt="">
-                        </div>
+                    <div class="w-16 h-16 bg-[#F4F7FF] flex justify-center items-center rounded-full">
+                         <img src="./assets/theme-btn.png" alt="">
                     </div>
-              </nav>
+                </div>
+            </div>
+        </nav>
     </header>
     
  <main class="grid grid-cols-4">
-       <section class="col-span-3 bg-[#FFFFFF] mt-5">
-         <div class="grid grid-cols-4 gap-4 h-32 my-5">
+  <!-- Card Navbar Here -->
+    <section class="col-span-3 bg-[#FFFFFF] mt-5">
 
-              <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 ml-6">
+        <div class="grid grid-cols-4 gap-4 h-32 my-5">
+            <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 ml-6">
                 <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
                     <img src="./assets/checkbox.png" alt="">
                 </div>
@@ -43,49 +45,169 @@
                     <h2>Task Assigned</h2>
                     <p class="font-extrabold text-4xl">0 5</p>
                  </div>
-              </div>
+            </div>
 
-              <div class="change-color col-span-2 flex  items-center px-8 mt-6 space-x-2  rounded-lg">
-                  <div class="border-dashed border-black ">
+            <div class="change-color col-span-2 flex  items-center px-8 mt-6 space-x-2  rounded-lg">
+                <div class="border-dashed border-black ">
                     <img src="./assets/board.png" alt="">
-                  </div>
-                  <div>
+                </div>
+                <div>
                     <h2 class="text-xl">
                         Discover Something<br>
                         New Today!
                     </h2>
-                  </div>
-              </div>
+                </div>
+            </div>
 
-              <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 mr-6">
+            <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 mr-6">
                 <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
                     <img src="./assets/calender.png" alt="">
                 </div>
-                 <div>
+                <div>
                     <h2>Wed ,</h2>
                     <p class="text-lg font-bold">Jul 28 2025</p>
                  </div>
-              </div>
-         </div>
+            </div>
+        </div>
 
 
 
 
-    <!-- Main Card Start Here -->
-    <div class="grid grid-cols-3 gap-5 pb-5 p-6">
-    <!-- Main Card One -->
-    
-      <div class="bg-[#F4F7FF] p-3 rounded-lg">
-            <div class="px-2 pb-5 space-y-4">
+     <!-- Main Card Start Here -->
+       <div class="grid grid-cols-3 gap-5 pb-5 p-6">
+          <!-- Main Card One -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+                <div class="px-2 pb-5 space-y-4">
                     <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-        
                     <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
-                    
+                        <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                            <p class="">Debug using Chrome DevTools,<br>
+                                        check for overlapping...
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3>Deadline</h3>
+                                <h2 class="text-lg font-bold">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Completed
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    
+
+          <!-- Main Card Two -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
                     <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                          <p class="">Debug using Chrome DevTools,<br>
-                             check for overlapping...
-                          </p>
+                        <p class="">Debug using Chrome DevTools,<br>
+                                    check for overlapping...
+                        </p>
                     </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="text-lg font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+       
+    
+          <!-- Main Card Three -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="">Debug using Chrome DevTools,<br>
+                                    check for overlapping...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="text-lg font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+          <!-- Main Four Three -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="">Debug using Chrome DevTools,<br>
+                                    check for overlapping...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="text-lg font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+      
+          
+          <!-- Main Card Five -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="">Debug using Chrome DevTools,<br>
+                                    check for overlapping...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="text-lg font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+          <!-- Main Card Six -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+        <div class="px-2 pb-5 space-y-4">
+            <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+            <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                    <p class="">Debug using Chrome DevTools,<br>
+                                check for overlapping...
+                    </p>
+                </div>
                 <div class="flex items-center justify-between">
                     <div>
                         <h3>Deadline</h3>
@@ -97,163 +219,30 @@
                         </a>
                     </div>
                 </div>
+        </div>
             </div>
-      </div>
-    
 
-    <!-- Main Card Two -->
-      <div class="bg-[#F4F7FF] p-3 rounded-lg">
-        <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-    
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
-                
-                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                      <p class="">Debug using Chrome DevTools, <br>
-                         check for overlapping...
-                      </p>
-                </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <h3>Deadline</h3>
-                    <h2 class="text-lg font-bold">21 March 2025</h2>
-                </div>
-                <div>
-                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Completed
-                    </a>
-                </div>
+
+        </div>
+    </section>
+
+    <section class="grid col-span-1 bg-[#F4F7FF]">
+        <div class="flex flex-col items-center space-y-2 text-xl bg-[#FFFFFF] mt-5 ml-5 rounded-lg py-8">  
+            <div class="flex  space-x-2">
+                <img src="./assets/activity.png" alt="logo">
+                <h2>Activity Log </h2>
+            </div>
+            <div>
+                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Clear History
+                </a>
             </div>
         </div>
-      </div>
-       
-    
-
-    <!-- Main Card Three -->
-      <div class="bg-[#F4F7FF] p-3 rounded-lg">
-        <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-    
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
-                
-                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                      <p class="">Debug using Chrome DevTools, <br>
-                         check for overlapping...
-                      </p>
-                </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <h3>Deadline</h3>
-                    <h2 class="text-lg font-bold">21 March 2025</h2>
-                </div>
-                <div>
-                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Completed
-                    </a>
-                </div>
-            </div>
-        </div>
-      </div>  
-
-    <!-- Main Four Three -->
-      <div class="bg-[#F4F7FF] p-3 rounded-lg">
-        <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-    
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
-                
-                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                      <p class="">Debug using Chrome DevTools, <br>
-                         check for overlapping...
-                      </p>
-                </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <h3>Deadline</h3>
-                    <h2 class="text-lg font-bold">21 March 2025</h2>
-                </div>
-                <div>
-                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Completed
-                    </a>
-                </div>
-            </div>
-        </div>
-      </div>
-        
-    <!-- Main Card Five -->
-      <div class="bg-[#F4F7FF] p-3 rounded-lg">
-        <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-    
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
-                
-                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                      <p class="">Debug using Chrome DevTools, <br>
-                         check for overlapping...
-                      </p>
-                </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <h3>Deadline</h3>
-                    <h2 class="text-lg font-bold">21 March 2025</h2>
-                </div>
-                <div>
-                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Completed
-                    </a>
-                </div>
-            </div>
-        </div>
-      </div>
-
-    <!-- Main Card Six -->
-      <div class="bg-[#F4F7FF] p-3 rounded-lg">
-        <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-    
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
-                
-                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                      <p class="">Debug using Chrome DevTools, <br>
-                         check for overlapping...
-                      </p>
-                </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <h3>Deadline</h3>
-                    <h2 class="text-lg font-bold">21 March 2025</h2>
-                </div>
-                <div>
-                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Completed
-                    </a>
-                </div>
-            </div>
-        </div>
-      </div>
-
-
-    </div>
-       </section>
-
-       <section class="col-span-1 bg-[#F4F7FF]">
-            <div class=" flex flex-col items-center space-y-2 text-xl bg-[#FFFFFF] mt-5 ml-5 rounded-lg py-8">  
-                <div class="flex  space-x-2">
-                    <img src="./assets/activity.png" alt="logo">
-                    <h2>Activity Log </h2>
-                </div>
-                <div>
-                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Clear History
-                    </a>
-                </div>
-            </div>
-       </section>
+    </section>
 </main>
 
 <footer>
-gpjierjgtoijheri
+ 
 </footer>
 
  <script src="scripts/scripts.js"></script>
