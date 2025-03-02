@@ -21,6 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const date = new Date();
+    
+// Get the current day, month, date, and year
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const formattedDate = date.toLocaleDateString('en-US', options);
+
+// Split the formatted date
+const parts = formattedDate.split(' ');
+document.getElementById("present-day").textContent = parts[0] + ',';  
+document.getElementById("present-month").textContent = parts.slice(1).join(' ');
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Select All "Completed" Buttons
   const buttons = document.querySelectorAll(".card-btn");
@@ -102,9 +115,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+
+
 document.getElementById("questions-page").addEventListener("click", function(){
   window.location.href = "questions.html"
 });
+
+
+
 
 
 
