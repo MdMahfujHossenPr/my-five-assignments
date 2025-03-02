@@ -11,11 +11,11 @@
     <!-- Flowbite Cdn Link -->
     <title>Dev-Board</title>
  </head>
- <body class="bg-[#F4F7FF] max-w-7xl mx-auto">
+ <body class="bg-[#F4F7FF] max-w-7xl p-4 mx-auto">
     <header>
         <nav>
             <div class="flex justify-between p-2  text-2xl bg-[#FFFFFF] mt-4 rounded-lg">  
-                <div class="flex p-4 items-center space-x-5 text-center">
+                <div class="flex p-4 items-center space-x-2 text-center">
                     <img src="./assets/logo.png" alt="logo">
                     <h1>Dev<span class="font-extrabold">Board</span></h1>
                 </div>
@@ -24,19 +24,21 @@
                          <img class="h-8" src="./assets/checkbox.png" alt="">
                          <h2 id="date-update">23</h2>
                     </div>
-                    <div class="w-16 h-16 bg-[#F4F7FF] flex justify-center items-center rounded-full">
-                         <img src="./assets/theme-btn.png" alt="">
-                    </div>
+                    <button id="theme" class="w-16 h-16 bg-[#F4F7FF] flex justify-center items-center rounded-full">
+                        <a href="#" class="theme-change">
+                            <img src="./assets/theme-btn.png" alt="Theme Change Button">
+                        </a>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
     
- <main class="grid grid-cols-4">
-  <!-- Card Navbar Here -->
-    <section class="col-span-3 bg-[#FFFFFF] mt-5">
+ <main class="grid grid-cols-4 mt-5 gap-4">
+  <!--Task Current Part-->
+    <section class="col-span-3 bg-[#FFFFFF]">
+        <div class="grid grid-cols-4 gap-4 mb-2 h-32">
 
-        <div class="grid grid-cols-4 gap-4 h-32 my-5">
             <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 ml-6">
                 <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
                     <img src="./assets/checkbox.png" alt="">
@@ -51,12 +53,13 @@
                 <div class="border-dashed border-black ">
                     <img src="./assets/board.png" alt="">
                 </div>
-                <div>
-                    <h2 class="text-xl">
+                
+                <a href="http://127.0.0.1:5500/questions.html">
+                    <h2 class="text-xl text-[#FFFFFF]">
                         Discover Something<br>
                         New Today!
                     </h2>
-                </div>
+                </a>    
             </div>
 
             <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 mr-6">
@@ -64,22 +67,26 @@
                     <img src="./assets/calender.png" alt="">
                 </div>
                 <div>
-                    <h2>Wed ,</h2>
-                    <p class="text-lg font-bold">Jul 28 2025</p>
-                 </div>
+                    <h2 id="present-day">Wed ,</h2>
+                    <p class="text-lg font-bold" id="present-month">Jul 28 2025</p>
+                </div>
             </div>
-        </div>
 
-     <!-- Main Card Start Here -->
-       <div class="grid grid-cols-3 gap-5 pb-5 p-6">
+        </div>
+         
+        <div class="border-b-2 border-dashed border-[#3752FD33]  pb-4"></div>
+
+      <!-- Main Card Start Here -->
+      <div class="grid grid-cols-3 gap-5 pb-5 p-6">
           <!-- Main Card One -->
-            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card">
                 <div class="px-2 pb-5 space-y-4">
                     <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-                    <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                    <h5 id="card-btn-one" class="text-xl title-day  font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
                         <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                            <p class="">Debug using Chrome DevTools,<br>
-                                        check for overlapping...
+                            <p class="#">
+                                Debug using Chrome DevTools,<br>
+                                check for overlapping...
                             </p>
                         </div>
                         <div class="flex items-center justify-between">
@@ -88,7 +95,7 @@
                                 <h2 class="text-lg font-bold">21 March 2025</h2>
                             </div>
                             <div>
-                                <button class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <button  class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                     Completed
                                 </button>
                             </div>
@@ -98,13 +105,14 @@
     
 
           <!-- Main Card Two -->
-            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card">
             <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">CloudSync</button>
+                <h5 id="card-btn-two" class="text-xl title-day font-semibold tracking-tight text-black">Add Dark Mode</h5>
                     <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                        <p class="">Debug using Chrome DevTools,<br>
-                                    check for overlapping...
+                        <p class="#">
+                             Store the user's preference in <br>
+                             localStorage, update CSS...
                         </p>
                     </div>
                     <div class="flex items-center justify-between">
@@ -113,7 +121,7 @@
                             <h2 class="text-lg font-bold">21 March 2025</h2>
                         </div>
                         <div>
-                            <button class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <button  class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Completed
                             </button>
                         </div>
@@ -123,13 +131,14 @@
        
     
           <!-- Main Card Three -->
-            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card">
             <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">SwiftPay</button>
+                <h5 id="card-btn-three" class="text-xl title-day font-semibold tracking-tight text-black">Optimize Home page</h5>
                     <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                        <p class="">Debug using Chrome DevTools,<br>
-                                    check for overlapping...
+                        <p class="#">
+                             Debug using Chrome DevTools,<br>
+                             check for overlapping...
                         </p>
                     </div>
                     <div class="flex items-center justify-between">
@@ -138,7 +147,7 @@
                             <h2 class="text-lg font-bold">21 March 2025</h2>
                         </div>
                         <div>
-                            <button class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <button  class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Completed
                             </button>
                         </div>
@@ -146,14 +155,16 @@
             </div>
             </div>
 
+
           <!-- Main Four Three -->
-            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card">
             <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Meta</button>
+                <h5 id="card-btn-four" class="text-xl title-day font-semibold tracking-tight text-black">Add new emoji 🤲</h5>
                     <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                        <p class="">Debug using Chrome DevTools,<br>
-                                    check for overlapping...
+                        <p class="#">
+                            Debug using Chrome DevTools,<br>
+                            check for overlapping...
                         </p>
                     </div>
                     <div class="flex items-center justify-between">
@@ -162,7 +173,7 @@
                             <h2 class="text-lg font-bold">21 March 2025</h2>
                         </div>
                         <div>
-                            <button class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <button  class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Completed
                             </button>
                         </div>
@@ -172,13 +183,14 @@
       
           
           <!-- Main Card Five -->
-            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card">
             <div class="px-2 pb-5 space-y-4">
-                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-                <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Google LLC</button>
+                <h5 id="card-btn-five" class="text-xl title-day font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
                     <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                        <p class="">Debug using Chrome DevTools,<br>
-                                    check for overlapping...
+                        <p class="#">
+                            Debug using Chrome DevTools,<br>
+                            check for overlapping...
                         </p>
                     </div>
                     <div class="flex items-center justify-between">
@@ -187,7 +199,7 @@
                             <h2 class="text-lg font-bold">21 March 2025</h2>
                         </div>
                         <div>
-                            <button class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <button  class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Completed
                             </button>
                         </div>
@@ -195,14 +207,16 @@
             </div>
             </div>
 
+
           <!-- Main Card Six -->
-            <div class="bg-[#F4F7FF] p-3 rounded-lg">
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card">
         <div class="px-2 pb-5 space-y-4">
-            <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
-            <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+            <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Glassdoar</button>
+            <h5 id="card-btn-six" class="text-xl title-day font-semibold tracking-tight text-black">Improve Job searching</h5>
                 <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
-                    <p class="">Debug using Chrome DevTools,<br>
-                                check for overlapping...
+                    <p class="#">
+                        Debug using Chrome DevTools,<br>
+                        check for overlapping...
                     </p>
                 </div>
                 <div class="flex items-center justify-between">
@@ -211,7 +225,7 @@
                         <h2 class="text-lg font-bold">21 March 2025</h2>
                     </div>
                     <div>
-                        <button class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <button  class="text-white card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Completed
                         </button>
                     </div>
@@ -219,35 +233,30 @@
         </div>
             </div>
 
-
-        </div>
+      </div>
     </section>
-
-    <section class="grid col-span-1 bg-[#F4F7FF]">
-        <div class="flex flex-col items-center space-y-2 text-xl bg-[#FFFFFF] mt-5 ml-5 rounded-lg py-8">  
-            <div class="flex  space-x-2">
-                <img src="./assets/activity.png" alt="logo">
-                <h2>Activity Log </h2>
-            </div>
-            <div>
-                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Clear History
-                </a>
-            </div>
-            <div class="py-8 p-4">
-                <div class="bg-[#F4F7FF] px-2 py-4 rounded-lg">
-                    <p class="text-base"> 
-                        You have Complete The Task Add <br>
-                        Dark Mode at 12:48:15 PM
-                    </p>
-                </div>
-            </div>
+  
+  <!-- Delete Card History-->
+    <section class="w-full h-full bg-[#FFFFFF]">
+        <div class="flex justify-center mt-5 space-x-2">
+            <img src="./assets/activity.png" alt="logo">
+            <h2 class="text-lg font-semibold">Activity Log </h2>
+        </div>
+        
+        <div class="flex justify-center mt-5 border-b-2 border-dashed border-[#3752FD33]  pb-4">
+            <a href="#" id="delete-history" class="text-white bg-blue-700 hover:bg-blue-800   focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-400">
+                Clear History
+            </a>
+        </div>
+        
+        <div class="bg-[#FFFFFF] mt-8 mx-4 newComment main-text-box rounded-lg " id="comment-list">
+            
         </div>
     </section>
 </main>
 
 <footer>
- 
+
 </footer>
 
  <script src="scripts/scripts.js"></script>
