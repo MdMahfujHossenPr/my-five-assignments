@@ -101,3 +101,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.getElementById("questions-page").addEventListener("click", function(){
+  window.location.href = "questions.html"
+});
+
+
+
+
+
+  
